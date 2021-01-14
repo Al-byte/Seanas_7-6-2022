@@ -1,0 +1,234 @@
+html, body {
+  overflow-x: hidden;
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: Seanas;
+}
+
+@font-face {
+  font-family: 'Seanas';
+  src: url('./NeoBulletin\ Trash.woff');
+  font-style: normal;
+  font-weight: 100;
+}
+
+.menu-tabs {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.active-tab {
+  border-bottom: 3px solid rgb(1, 86, 79);
+}
+
+#active-tab {
+  position: relative;
+  width: 38%;
+  margin: 0 auto;
+}
+
+#home:hover, #about:hover, #menu:hover, #media:hover, #contact:hover {
+  border-bottom: 3px solid rgb(289, 187, 24);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  max-height: 355px;
+}
+ 
+.carousel {
+  display: none;
+}
+
+.carousel-inner {
+  max-height: 300px;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+#owner {
+  width: 100%;
+}
+
+footer {
+  font-size: 11px;
+  background-color: rgb(1, 86, 79);
+  color: rgb(289, 187, 24);
+}
+
+#logo {
+  max-width: 90px;
+}
+
+.navbar, .mobile {
+  display: none;
+}
+
+.menu-tabs-mobile {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.contacts {
+  padding: -80%;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ 
+  .nav, .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+
+  #banner {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    max-height: 300px;
+  }
+
+  .about {
+    margin-top: -5% !important;
+  }
+
+  .carousel-item {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .nav {
+    display: none;
+  }
+  
+  .about {
+    margin-top: -10px;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  #banner {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+  }
+
+  .carousel-item {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .nav {
+    display: none;
+  }
+  
+  .about {
+    margin-top: -17px;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+  }
+
+  #banner {
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    min-height: 370px;
+  }
+
+  .carousel-item {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .menu-tabs {
+    max-width: 169px;
+    margin: 16px auto 0 auto;
+    font-size: 20px;
+    color: black;
+  } 
+
+  .about {
+    margin-top: -10px;
+  }
+
+  #banner {
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .menu-tabs {
+    max-width: 180px;
+    margin: 10px auto 0 auto;
+    font-size: 22px;
+    color: #000;
+  }
+ }

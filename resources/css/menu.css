@@ -1,0 +1,328 @@
+html, body {
+  overflow-x: hidden;
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: Seanas;
+}
+
+@font-face {
+  font-family: 'Seanas';
+  src: url('./NeoBulletin\ Trash.woff');
+  font-style: normal;
+  font-weight: 100;
+}
+
+.shadow {
+  border:2px solid rgba(0,6,12,.5);
+  box-shadow: 0 2px 12px rgba(0,6,12,.5);
+  -moz-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+  -webkit-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+  -khtml-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+}
+
+.zoom {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+}  
+
+.hide {
+  display: none;
+}
+
+.btn {
+  background-color: rgb(1, 86, 79);
+  font-weight: 200;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(289, 187, 24);
+  color: black;
+  font-weight: 200;
+}
+
+.menu-tabs {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.active-tab {
+  border-bottom: 3px solid rgb(1, 86, 79);
+}
+
+#active-tab {
+  position: relative;
+  width: 34%;
+  margin: 0 auto;
+}
+
+#home:hover, #about:hover, #menu:hover, #media:hover, #contact:hover {
+  border-bottom: 3px solid rgb(289, 187, 24);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  max-height: 355px;
+}
+
+.carousel-inner {
+  max-height: 300px;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel, .welcome {
+  display: none;
+}
+
+h1, h3, h6 {
+  color: rgb(1, 86, 79);
+  font-weight: 800;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.box {
+  border: 2px solid rgb(1, 86, 79);
+}
+
+.Nene {
+  color: rgb(1, 86, 79);
+  font-weight: 800;
+}
+
+.h6-mobile, .mobile {
+  display: none;
+}
+
+.drink {
+  color: black;
+  font-weight: 400;
+}
+
+.warning {
+  line-height: 1;
+  font-size: 12px;
+}
+
+.sides {
+  line-height: 0.9;
+  font-weight: 600;
+}
+
+
+.thin {
+  font-weight: 300;
+}
+
+.description {
+  line-height: 1;
+}
+
+footer {
+  font-size: 11px;
+  background-color: rgb(1, 86, 79);
+  color: rgb(289, 187, 24);
+}
+
+#logo {
+  max-width: 90px;
+}
+
+.navbar {
+  display: none;
+}
+
+.menu-tabs-mobile {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.contacts {
+  padding: -80%;
+}
+
+
+
+/*All Mobile Devices */
+@media (max-width: 991.98px) { 
+  .menu-container {
+    margin-top: 100px;
+  }
+}
+
+/*All Desktop Devices */
+@media (min-width: 992px) { 
+  .menu-container {
+    margin-top: 30px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ 
+  .nav {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+
+  #banner {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    max-height: 315px;
+    margin-bottom: -8%;
+  }
+
+  figcaption {
+    margin-top: 8%;
+  }
+
+  .menu {
+    margin-top: -30px;
+  }
+
+  .carousel-item {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .nav {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+  }
+
+  #banner {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+
+  .menu {
+    margin-top: -39px;    
+  }
+
+  .carousel-item {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .nav {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+  }
+
+  #banner {
+    width: 100%;
+    height: auto;
+    min-height: 370px;
+  }
+
+  .menu {
+    margin-top: -6%;
+  }
+  
+  .carousel-item {
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .menu-tabs {
+    max-width: 169px;
+    margin: 16px auto 0 auto;
+    font-size: 20px;
+    color: black;
+  } 
+
+  #banner {
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .menu-tabs {
+    max-width: 180px;
+    margin: 10px auto 0 auto;
+    font-size: 22px;
+    color: #000;
+  }
+ }

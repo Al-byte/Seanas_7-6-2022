@@ -1,0 +1,524 @@
+html {
+  overflow: auto;
+  height: 100%;
+}
+
+body {
+ overflow: auto;
+ height: 100%;
+ background-image: url('./background.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: black;
+ font-family: Seanas;
+}
+
+.modal-open[style] {
+  padding-right: 0px !important;
+}
+
+@font-face {
+ font-family: 'Seanas';
+ src: url('./NeoBulletin\ Trash.woff');
+ font-style: normal;
+ font-weight: 100;
+}
+
+
+
+.modal-open {
+  overflow: auto;
+}
+
+
+.menu-tabs {
+ max-width: 180px;
+ margin: 0 auto;
+}
+
+.active-tab {
+ border-bottom: 3px solid rgb(1, 86, 79);
+}
+
+#active-tab {
+ position: relative;
+ width: 40%;
+ margin: 0 auto;
+}
+
+#home:hover, #about:hover, #menu:hover, #media:hover, #contact:hover {
+ border-bottom: 3px solid rgb(289, 187, 24);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#banner {
+ width: 100%;
+ height: auto;
+ max-height: 355px;
+}
+
+.carousel-inner {
+ height: auto;
+ width: 100%;
+ }
+
+.card-img-top {
+ width: 100%;
+ height: auto;
+}
+
+.thumbnail {
+ width: 100%;
+ height: auto;
+}
+
+h3 {
+ color: rgb(289, 187, 24);
+ background-color: rgba(1, 86, 79, 0.4);
+ 
+}
+
+.carousel-caption {
+  width: 100%;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+footer {
+ font-size: 11px;
+ background-color: rgb(1, 86, 79);
+ color: rgb(289, 187, 24);
+}
+
+#logo {
+ max-width: 90px;
+}
+
+.navbar, .mobile {
+ display: none;
+}
+
+.menu-tabs-mobile {
+ width: 100%;
+ height: auto;
+ max-width: 300px;
+}
+
+.contacts {
+ padding: -80%;
+}
+
+.hide {
+ display: none !important;
+}
+
+
+/* Extra small devices (portrait phones, less than 426px) */
+@media (max-width: 424.98px) { 
+
+ .nav, .web {
+   display: none;
+ }
+
+ .mobile {
+   display: block;
+ }
+ 
+ .navbar {
+   display: flex;
+ }
+
+ .menu-tabs-mobile {
+   width: 100%;
+   height: auto;
+   max-width: 200px;
+ }
+
+ #banner {
+   margin-top: 10%;
+   width: 100%;
+   height: auto;
+   max-height: 315px;
+ }
+
+ .carousel-item {
+  max-height: 250px;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+}
+
+h3 {
+  position: relative;
+  bottom: 20px;
+  font-size: 20px;
+  color: rgb(289, 187, 24);
+  background-color: rgba(1, 86, 79, 0.4);
+  height: 56px;
+}
+
+.carousel-caption {
+  position: relative;
+  bottom: 70px;
+  left: -1px;
+}
+
+.modal-content {
+  width: 100%;
+  height: auto;
+  min-height: 475px;
+  max-height: 490px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: auto;
+  min-height: 365px;
+  max-height: 380px;
+}
+
+.carousel-item img {
+ width: 100%;
+ height: auto;
+}
+
+ .carousel-control-prev, .carousel-control-next {
+   height: 100px !important;
+   margin-top: 100px;
+ }
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 426px) */
+@media (min-width: 425px) and (max-width: 575.98px) { 
+
+  .nav, .web {
+    display: none;
+  }
+ 
+  .mobile {
+    display: block;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+ 
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+ 
+  #banner {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    max-height: 315px;
+  }
+ 
+ 
+  .carousel-item {
+    max-height: 250px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+  }
+ 
+  h3 {
+    position: relative;
+    bottom: 20px;
+    font-size: 24px;
+    color: rgb(289, 187, 24);
+    background-color: rgba(1, 86, 79, 0.4);
+    height: 56px;
+  }
+ 
+  .carousel-caption {
+    position: relative;
+    bottom: 70px;
+    left: -1px;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: auto;
+    min-height: 475px;
+    max-height: 490px;
+    margin: 0 auto;
+  }
+ 
+  .carousel-inner {
+    width: 100%;
+    height: auto;
+    min-height: 365px;
+    max-height: 380px;
+  }
+ 
+ .carousel-item img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ .nav {
+   display: none;
+ }
+ 
+ .navbar {
+   display: flex;
+ }
+
+ .menu-tabs-mobile {
+   width: 100%;
+   height: auto;
+   max-width: 170px;
+ }
+
+ #banner {
+   margin-top: 10%;
+   width: 100%;
+   height: auto;
+   min-height: 280px;
+ }
+
+ .carousel-item {
+   max-height: 250px;
+   height: auto;
+   width: 100%;
+   max-width: 100%;
+   min-height: 100px;
+ }
+
+ h3 {
+   position: relative;
+   bottom: 0px;
+   color: rgb(289, 187, 24);
+   background-color: rgba(1, 86, 79, 0.4);
+   height: 66px;
+   font-size: 24px;
+ }
+
+ .carousel-caption {
+  position: relative;
+  bottom: 100px;
+  left: -1px;
+  width: 100%;
+}
+
+ .modal-content {
+  width: 90%;
+  height: auto;
+  min-height: 475px;
+  max-height: 490px;
+  margin: 0 auto;
+  }
+
+.carousel-inner {
+  width: 100%;
+  height: auto;
+  min-height: 385px;
+  max-height: 400px;
+}
+
+.carousel-item img {
+ width: 100%;
+ height: auto;
+ min-height: 385px;
+  max-height: 400px;
+
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .nav {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+ 
+  .menu-tabs-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+  }
+ 
+  #banner {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+ 
+  .carousel-item {
+    max-height: 250px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+  }
+ 
+  h3 {
+    position: relative;
+    bottom: 20px;
+    color: rgb(289, 187, 24);
+    background-color: rgba(1, 86, 79, 0.4);
+    height: 66px;
+    font-size: 24px;
+  }
+ 
+  .carousel-caption {
+    position: relative;
+    bottom: 80px;
+    left: -1px;
+  }
+
+  .modal-content {
+   width: 90%;
+   height: auto;
+   min-height: 475px;
+   max-height: 490px;
+   margin: 0 auto;
+   }
+ 
+ .carousel-inner {
+   width: 100%;
+   height: auto;
+   min-height: 385px;
+   max-height: 400px;
+ }
+ 
+ .carousel-item img {
+  width: 100%;
+  height: auto;
+  min-height: 385px;
+   max-height: 400px;
+ 
+ }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .menu-tabs {
+    max-width: 169px;
+    margin: 16px auto 0 auto;
+    font-size: 20px;
+    color: black;
+  } 
+
+ #banner {
+   margin-top: 1%;
+   width: 100%;
+   height: auto;
+   min-height: 350px;
+ }
+
+ footer {
+   font-size: 16px;
+ }
+
+ h3 {
+  color: rgb(289, 187, 24);
+  background-color: rgba(1, 86, 79, 0.4);
+  position: relative;
+  bottom: 100px;
+  height: 66px;
+  font-size: 24px;
+ }
+
+ .carousel-caption {
+  position: relative;
+  bottom: -8px;
+  left: -1px;
+}
+
+ .modal-content {
+  width: 90%;
+  height: auto;
+  min-height: 475px;
+  max-height: 490px;
+  margin: 0 auto;
+  }
+
+.carousel-inner {
+  width: 100%;
+  height: auto;
+  min-height: 385px;
+  max-height: 400px;
+}
+
+.carousel-item img {
+ width: 100%;
+ height: auto;
+ min-height: 385px;
+  max-height: 400px;
+
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+  h3 {
+    color: rgb(289, 187, 24);
+    background-color: rgba(1, 86, 79, 0.4);
+    position: relative;
+    bottom: 150px;
+    height: 66px;
+   }
+  
+   .carousel-caption {
+    position: relative;
+    bottom: -60px;
+    left: -1px;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-item img {
+  width: 100%;
+  height: auto;;
+  }
+
+  .menu-tabs {
+    max-width: 180px;
+    margin: 10px auto 0 auto;
+    font-size: 22px;
+    color: #000;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    height: 200px !important;
+    margin-top: 100px;
+  }
+
+  .modal-body {
+    height: 500px;
+  }
+}
