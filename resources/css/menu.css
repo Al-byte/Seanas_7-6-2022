@@ -159,6 +159,12 @@ footer {
 
 
 
+
+.menu-title {
+  color: rgb(1, 86, 79);
+  font-weight: 800;
+}
+
 /*All Mobile Devices */
 @media (max-width: 991.98px) { 
   .menu-container {
